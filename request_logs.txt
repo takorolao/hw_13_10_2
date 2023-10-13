@@ -1,0 +1,46 @@
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tako/Desktop/step/django/hw_13_10_2/myproject/myapp/views.py", line 9, in home
+    return render(request, 'home.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+"GET / HTTP/1.1" 500 74944
+Not Found: /apple-touch-icon-precomposed.png
+"GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 2676
+Not Found: /apple-touch-icon.png
+"GET /apple-touch-icon.png HTTP/1.1" 404 2640
+"GET / HTTP/1.1" 200 251
+"GET /login/ HTTP/1.1" 200 704
+"POST /login/ HTTP/1.1" 200 769
+Not Found: /lregister
+"GET /lregister HTTP/1.1" 404 2607
+"GET /register HTTP/1.1" 301 0
+"GET /register/ HTTP/1.1" 200 719
+"POST /register/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 704
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 251
+/Users/tako/Desktop/step/django/hw_13_10_2/myproject/myapp/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /login/ HTTP/1.1" 200 704
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 251
+"GET /login HTTP/1.1" 301 0
+"GET /login/ HTTP/1.1" 200 704
+"POST /login/ HTTP/1.1" 302 0
+"GET /register/ HTTP/1.1" 200 719
